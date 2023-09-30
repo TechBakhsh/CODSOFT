@@ -12,7 +12,7 @@ sg.set_options(font='verdana 15')
 
 layout = [
     [sg.Text('Password Length:')],
-    [sg.InputText(default_text='Enter Password Length', size=(20, 1), key='-LENGTH-', justification='center')],
+    [sg.InputText(('', size=(20, 1), key='-LENGTH-', justification='center')],
     [sg.Button('Generate', key='-GENERATE-'), sg.Button('Exit', key='-EXIT-')],
     [sg.Text('Password'), sg.Multiline(size=(15, 3), no_scrollbar=True, disabled=True, key='-PASS-')],
 ]
